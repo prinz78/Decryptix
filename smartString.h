@@ -33,4 +33,5 @@ private:
 };
 
 
+
 #endif // SMARTSTRING_H_INCLUDED

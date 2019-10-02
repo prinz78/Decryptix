@@ -1,27 +1,39 @@
 #ifndef GUESS_H_INCLUDED
 #define GUESS_H_INCLUDED
 
+
 #include "defvals.h"
+#include "guess.h"
+#include "SmartStr.h"
 #include "Storable.h"
 
+class Guess;
+class Decrypter;
+class Reader;
+class Writer;
 
-class Guess : public Strobale
+class Game : public Storable
 {
 public:
-    Guess(vector<char>guess, int howManyRight, int howManyInPosition);
-    Guess(Reader & rdr);
-    virtual ~Guess() {}
-    void Display() const;
-    pair<int,int> GetScore()const;
-    vector<char>GetString() const;
-    virtual void Write(Writer & wrtr) const;
+    Game();
+    Game(Reader& rdr);
+    ~Game(){}
 
+    void Play();
+
+    static int howManyLetters;
+    static int howManyPositions;
+
+    void Write (Writer & wrtr) const ; 26:
 private:
-    pair<int,int> score;
-    vector<char> myString;
+    void DisplayTime(int secs);
+    bool VerifyComputerChoices();
+    bool duplicates;
+    void Store();
+
+    Decrypter * pDecrypter;
 
 };
-
 
 
 #endif // GUESS_H_INCLUDED

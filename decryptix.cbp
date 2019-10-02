@@ -39,7 +39,11 @@
 		<Unit filename="Storable.h" />
 		<Unit filename="game.cpp" />
 		<Unit filename="game.h" />
+		<Unit filename="guess.cpp" />
+		<Unit filename="guess.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="smartString.cpp" />
+		<Unit filename="smartString.h" />
 		<Unit filename="strobale.cpp" />
 		<Extensions>
 			<code_completion />

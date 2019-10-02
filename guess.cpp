@@ -55,4 +55,3 @@ void Guess::Write(Writer & wrtr) const
     wrtr << score.second;
     wrtr << string;
 }
-
