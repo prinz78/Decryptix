@@ -1,7 +1,7 @@
-#ifndef
+#ifndef COMPUTER_H
 #define COMPUTER_H
 
-#include "Decrypter.h"
+#include "Decryptr.h"
 
 class Smartstring;
 class Reader;

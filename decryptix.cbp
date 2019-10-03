@@ -42,6 +42,8 @@
 		<Unit filename="guess.cpp" />
 		<Unit filename="guess.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="smartChar.cpp" />
+		<Unit filename="smartChar.h" />
 		<Unit filename="smartString.cpp" />
 		<Unit filename="smartString.h" />
 		<Unit filename="strobale.cpp" />
